@@ -4,7 +4,7 @@
 #
 Name     : iniparse
 Version  : 0.4
-Release  : 8
+Release  : 9
 URL      : https://pypi.python.org/packages/source/i/iniparse/iniparse-0.4.tar.gz
 Source0  : https://pypi.python.org/packages/source/i/iniparse/iniparse-0.4.tar.gz
 Summary  : Accessing and Modifying INI files
