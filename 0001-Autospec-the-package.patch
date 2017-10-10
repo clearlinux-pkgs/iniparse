@@ -1,0 +1,59 @@
+From 1c84433ad7e93a10c1079554a7a27b1f87550fda Mon Sep 17 00:00:00 2001
+From: William Douglas <william.douglas@intel.com>
+Date: Tue, 10 Oct 2017 20:37:26 +0000
+Subject: [PATCH] Autospec the package
+
+---
+ Makefile.am  |  6 ++++++
+ autogen.sh   |  2 ++
+ configure.ac | 16 ++++++++++++++++
+ 3 files changed, 24 insertions(+)
+ create mode 100644 Makefile.am
+ create mode 100755 autogen.sh
+ create mode 100644 configure.ac
+
+diff --git a/Makefile.am b/Makefile.am
+new file mode 100644
+index 0000000..39e31f8
+--- /dev/null
++++ b/Makefile.am
+@@ -0,0 +1,6 @@
++pkgpython_PYTHON = \
++	__init__.py \
++	compat.py \
++	config.py \
++	ini.py \
++	utils.py
+diff --git a/autogen.sh b/autogen.sh
+new file mode 100755
+index 0000000..4008222
+--- /dev/null
++++ b/autogen.sh
+@@ -0,0 +1,2 @@
++autoreconf -fi
++./configure "$@"
+diff --git a/configure.ac b/configure.ac
+new file mode 100644
+index 0000000..3b226f2
+--- /dev/null
++++ b/configure.ac
+@@ -0,0 +1,16 @@
++AC_PREREQ([2.68])
++AC_INIT([iniparse], [0.4.1])
++AM_INIT_AUTOMAKE([foreign silent-rules color-tests no-dist-gzip dist-xz])
++AC_CONFIG_FILES([Makefile])
++
++AM_PATH_PYTHON([3.0])
++
++PKG_PROG_PKG_CONFIG
++
++AC_OUTPUT
++
++AC_MSG_RESULT([
++        prefix:                 ${prefix}
++        pythondir:              ${pythondir}
++        pythonpkgdir:           ${pkgpythondir}
++])
+-- 
+2.14.2
+
