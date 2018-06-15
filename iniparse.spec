@@ -12,7 +12,7 @@ Group    : Development/Tools
 License  : MIT Python-2.0
 Requires: iniparse-python3
 Requires: iniparse-python
-BuildRequires : python-dev
+
 BuildRequires : python3
 Patch1: 0001-Autospec-the-package.patch
 
