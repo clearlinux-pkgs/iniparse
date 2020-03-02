@@ -4,7 +4,7 @@
 #
 Name     : iniparse
 Version  : 5939e839bb8759bd2a0129bb298b5f01b1800508
-Release  : 34
+Release  : 35
 URL      : https://github.com/zeyosinc/iniparse/archive/5939e839bb8759bd2a0129bb298b5f01b1800508.tar.gz
 Source0  : https://github.com/zeyosinc/iniparse/archive/5939e839bb8759bd2a0129bb298b5f01b1800508.tar.gz
 Summary  : No detailed summary available
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582937841
+export SOURCE_DATE_EPOCH=1583158207
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -69,7 +69,7 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1582937841
+export SOURCE_DATE_EPOCH=1583158207
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/iniparse
 cp %{_builddir}/iniparse-5939e839bb8759bd2a0129bb298b5f01b1800508/LICENSE %{buildroot}/usr/share/package-licenses/iniparse/24d6fcdd5e29331140a7596cfed0f69389c89df3
