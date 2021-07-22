@@ -4,7 +4,7 @@
 #
 Name     : iniparse
 Version  : 5939e839bb8759bd2a0129bb298b5f01b1800508
-Release  : 43
+Release  : 44
 URL      : https://github.com/zeyosinc/iniparse/archive/5939e839bb8759bd2a0129bb298b5f01b1800508.tar.gz
 Source0  : https://github.com/zeyosinc/iniparse/archive/5939e839bb8759bd2a0129bb298b5f01b1800508.tar.gz
 Summary  : No detailed summary available
